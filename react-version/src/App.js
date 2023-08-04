@@ -11,8 +11,11 @@ function App () {
     <div className="App">
       <Navigation />
       <Profile />
-      <TweetList />
-      <TweetForm />
+      <main className="container">
+        <section className="newtweet"> <TweetList /> </section>
+        <section className="tweets"> <TweetForm /> </section>
+      </main>
+
     </div>
   );
 }
