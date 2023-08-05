@@ -1,13 +1,11 @@
-function Profile () {
+function Profile (props) {
 
-  const firstName = "Amy"
-  const lastName = "Mansell"
-  const avatar = "/profile-hex.png"
+  const { firstName, lastName, avatar } = props;
 
   return (
     <aside>
       <div className="profile">
-        <img className="profile__image" src={avatar} />
+        <img className="profile__image" alt="" src={avatar} />
       </div>
       <br />
       <div className="profile__name">

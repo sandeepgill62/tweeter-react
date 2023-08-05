@@ -7,10 +7,17 @@ import TweetList from './components/TweetList'
 import TweetForm from './components/TweetForm'
 
 function App () {
+
+  const user = {
+    firstName: "Amy",
+    lastName: "Mansel",
+    avatar: "/profile-hex.png",
+  };
+
   return (
     <div className="App">
       <Navigation />
-      <Profile />
+      <Profile {...user} />;
       <main className="container">
         <section className="newtweet"> <TweetList /> </section>
         <section className="tweets"> <TweetForm /> </section>
